@@ -7,18 +7,18 @@
     <title>Skolissen | Der vi knytter komfort og klasse</title>
 </head>
 <body>
-    <span>KAMPANJE KAMPANJE KAMPANJE KAMPANJE</span>
+    <span id="campaign_banner" >KAMPANJE KAMPANJE KAMPANJE KAMPANJE</span>
     <h1>Skolissen - Sko nettbutikk for alle</h1>
     <header id="header_grid">
-        <a id="logo" href="index.html">Skolissen</a>
-        <nav>
-            <ul>
+        <a class="center_self" id="logo" href="index.html">Skolissen</a>
+        <nav class="place_self_at_end_flex" id="navigation">
+            <ul id="icons_navigation">
                 <li>
                     <a href="index.html"><img class="icons" src="img/house_icon.svg" alt="Icon of a small black house"></a>
                     <p>Hjem</p>
                 </li>
                 <li>
-                    <a href="#"><img class="icons" src="img/key_icon.svg"Icon of a small black key"></a>
+                    <a href="#"><img class="icons" src="img/key_icon.svg" alt="Icon of a small black key"></a>
                     <p>Logg inn</p>
                 </li>
                 <li>
@@ -30,9 +30,28 @@
                     <p>Handlekurv</p>
                 </li>
             </ul>
+            <nav id="search_and_ham">
+                <nav class="h_menu">
+                    <button><img id="hamburger_icon" src="img/bars-solid.svg" alt="picture of a hamburger logo icon"></button>
+                    <nav class="content">
+                        <ul>
+                            <li><a href="https://google.com">Herresko</a></li>
+                            <li><a href="#">Damesko</a></li>
+                            <li><a href="#">Barnesko</a></li>
+                            <li><a href="#">Outlet</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+                <nav id="search_bar">
+                    <form action="WEBSITE_SEARCH" method="get" class="search-form">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit"><img id="search_icon" src="img/magnifying-glass-solid.svg" alt="picture of a search icon black"></button>
+                    </form>
+                </nav>
+            </nav>
         </nav>
     </header>
-    <main>
+    <main> 
 
     </main>
     <footer>
