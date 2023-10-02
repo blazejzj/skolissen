@@ -1,0 +1,5 @@
+woman_category, kid_category, male_category
+https://app.leonardo.ai/
+
+home_icon, key_icon, heart_icon, cart_icon
+Taken from https://fontawesome.com/search?q=cart&o=r
