@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&family=Lilita+One&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
+.center_text {
+  text-align: center;
+}
+
 .center_self {
   align-self: center;
   justify-self: center;
@@ -130,7 +134,7 @@ h1 {
 
 .content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-image: linear-gradient(to right, #fcfcfc, #fffbf8);
   border-radius: 10%;
   border: 1px solid #282826;
@@ -162,4 +166,47 @@ nav.h_menu:hover .content {
 
 .h_menu .content, .h_menu .content * {
   pointer-events: auto;
+}
+
+#om_oss {
+  grid-area: om_oss;
+  display: flex;
+  flex-direction: column;
+}
+
+#kundeservice {
+  grid-area: kundeservice;
+  display: flex;
+  flex-direction: column;
+}
+
+#vil_og_bet {
+  grid-area: vil_og_bet;
+  display: flex;
+  flex-direction: column;
+}
+
+#sosiale {
+  grid-area: sosiale;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment {
+  grid-area: payment;
+  width: 25px;
+}
+
+#footer_grid {
+  display: grid;
+  grid-template-areas: "om_oss" "kundeservice" "vil_og_bet" "sosiale" "payment";
+  gap: 2rem;
+  background-color: #e9e9e9;
+  padding: 1rem;
+}
+#footer_grid li {
+  gap: 1.5rem;
+}
+#footer_grid li a {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
