@@ -1,80 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
     <title>Skolissen | Der vi knytter komfort og klasse</title>
 </head>
+
 <body>
-    <span id="campaign_banner" >KAMPANJE KAMPANJE KAMPANJE KAMPANJE</span>
-    <h1>Skolissen - Sko nettbutikk for alle</h1>
-    <header id="header_grid">
-        <a class="center_self" id="logo" href="index.html">Skolissen</a>
-        <nav class="place_self_at_end_flex" id="navigation">
-            <ul id="icons_navigation">
-                <li>
+    <a id="campaign-banner"href="#">KAMPANJE KAMPANJE KAMPANJE KAMPANJE</a>
+    <h1 class="hidden">Skolissen - Sko nettbutikk for alle</h1>
+    <header id="header-grid">
+        <a class="center-self" id="site-logo" href="index.html">Skolissen</a>
+        <nav class="place-self-at-end-flex" id="main-navigation">
+            <ul id="icon-navigation">
+                <li class="center-text">
                     <a href="index.html"><img class="icons" src="img/house_icon.svg" alt="Icon of a small black house"></a>
-                    <p>Hjem</p>
+                    <p class="hidden">Hjem</p>
                 </li>
-                <li>
+                <li class="center-text">
                     <a href="#"><img class="icons" src="img/key_icon.svg" alt="Icon of a small black key"></a>
-                    <p>Logg inn</p>
+                    <p class="hidden">Logg inn</p>
                 </li>
-                <li>
+                <li class="center-text">
                     <a href="#"><img class="icons" src="img/heart_icon.svg" alt="Icon of a small black heart"></a>
-                    <p>Favoritter</p>
+                    <p class="hidden">Favoritter</p>
                 </li>
-                <li>
+                <li class="center-text">
                     <a href="#"><img class="icons" src="img/cart_icon.svg" alt="Icon of a small black shoppingcart"></a>
-                    <p>Handlekurv</p>
+                    <p class="hidden">Handlekurv</p>
                 </li>
             </ul>
-            <nav id="search_and_ham">
-                <nav class="h_menu">
-                    <button><img id="hamburger_icon" src="img/bars-solid.svg" alt="picture of a hamburger logo icon"></button>
+            <nav id="search-and-ham">
+                <nav class="h-menu">
+                    <button><img id="hamburger-icon" src="img/bars-solid.svg" alt="picture of a hamburger logo icon"></button>
                     <nav class="content">
                         <ul>
-                            <li><a href="https://google.com">Herresko</a></li>
+                            <li><a href="#">Herresko</a></li>
                             <li><a href="#">Damesko</a></li>
                             <li><a href="#">Barnesko</a></li>
                             <li><a href="#">Outlet</a></li>
                         </ul>
                     </nav>
                 </nav>
-                <nav id="search_bar">
+                <nav id="search-bar">
                     <form action="WEBSITE_SEARCH" method="get" class="search-form">
-                        <input type="text" name="query" placeholder="Search...">
-                        <button type="submit"><img id="search_icon" src="img/magnifying-glass-solid.svg" alt="picture of a search icon black"></button>
+                        <input type="text" name="query" placeholder="Hva leter du etter?...">
+                        <button type="submit"><img id="search-icon" src="img/magnifying-glass-solid.svg" alt="picture of a search icon black"></button>
                     </form>
                 </nav>
             </nav>
         </nav>
     </header>
-    <main> 
-        
+    <main>
+        <section id="main-grid">
+            <h2 class="center-text" id="pop-kateg">POPULÆRE KATEGORIER</h2>
+            <article id="kvinnesko" >
+                <h3>Kvinnesko</h3>
+                <a href="#"><img class="b_categ" src="img/woman_category.png" alt="AI Picture generated for woman, female shoe category"></a>
+            </article>
+            <article id="herresko">
+                <h3>Herresko</h3>
+                <a href="#"><img class="b_categ" src="img/male_category.png" alt="AI Picture generated for male, man shoe category"></a>
+            </article>
+            <article id="barnesko">
+                <h3>Barnesko</h3>
+                <a href="#"><img class="b_categ" src="img/kid_category.png" alt="AI Picture generated for child/kid shoe category"></a>
+            </article>
+            <article id="outlet1">
+                <h3>Outlet</h3>
+                <a href="#"><img class="b_categ" src="img/outlet1.png" alt="AI picture generated for outlet category"></a>
+            </article>
+            <article id="reklame1">
+                <h3>Nyheter</h3>
+                <a href="#"><img class="b_categ" src="img/ad1.png" alt="AI picture generated for ads/reklame category"></a>
+            </article>
+        </section>
     </main>
     <footer>
         <nav>
-            <ul id="footer_grid">
-                <li id="om_oss">
-                    <a class="center_text" href="#">Om Oss</a>
+            <ul id="footer-grid">
+                <li id="om-oss">
+                    <a class="center-text" href="#">Om Oss</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur temporibus perspiciatis officiis sapiente eius impedit repellendus illo iusto nisi quidem earum repudiandae, beatae dicta quis?</p>
                 </li>
                 <li id="kundeservice">
-                    <a class="center_text" href="#">Kundeservice</a>
+                    <a class="center-text" href="#">Kundeservice</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur temporibus perspiciatis officiis sapiente eius impedit repellendus illo iusto nisi quidem earum repudiandae, beatae dicta quis?</p>
                 </li>
-                <li id="vil_og_bet">
-                    <a class="center_text"  href="#">Vilkår og betingelser</a>
+                <li id="vil-og-bet">
+                    <a class="center-text" href="#">Vilkår og betingelser</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur temporibus perspiciatis officiis sapiente eius impedit repellendus illo iusto nisi quidem earum repudiandae, beatae dicta quis?</p>
                 </li>
                 <li id="sosiale">
-                    <a class="center_text"  href="#">Sosiale Medier</a>
+                    <a class="center-text" href="#">Sosiale Medier</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur temporibus perspiciatis officiis sapiente eius impedit repellendus illo iusto nisi quidem earum repudiandae, beatae dicta quis?</p>
                 </li>
             </ul>
         </nav>
+        <ul id="payment-show">
+            <li>
+                <img class="payment-icon" src="img/credit-card-solid.svg" alt="Icon of a payment card in black">
+            </li>
+            <li>
+                <img class="payment-icon" src="img/credit-card-solid.svg" alt="Icon of a payment card in black">
+            </li>
+            <li>
+                <img class="payment-icon" src="img/credit-card-solid.svg" alt="Icon of a payment card in black">
+            </li>
+            <li>
+                <img class="payment-icon" src="img/credit-card-solid.svg" alt="Icon of a payment card in black">
+            </li>
+        </ul>
     </footer>
 </body>
+
 </html>
