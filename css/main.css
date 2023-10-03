@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&family=Lilita+One&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Gabarito:wght@400;700;900&family=Lilita+One&family=Mukta+Vaani:wght@500;600;700;800&family=Passion+One:wght@400;700;900&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ body {
 }
 
 #campaign-banner {
-  background-color: rgb(170, 172, 62);
+  background-color: rgb(238, 236, 138);
   display: block;
   font-size: 1.1rem;
   padding: 5px;
@@ -73,6 +73,10 @@ body {
   font-family: "Lilita One", cursive;
   grid-area: site-logo;
   margin-left: 10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: rgb(148, 88, 88);
 }
 
 #main-navigation {
@@ -132,8 +136,9 @@ body {
   padding: 5px;
 }
 .content ul li a {
+  margin: 0 0 0 2rem;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Passion One", cursive;
   color: #2c2d2e;
 }
 .content ul li a:hover {
@@ -159,21 +164,38 @@ main {
 
 #pop-kateg {
   grid-area: pop-kateg;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Gabarito", cursive;
   padding-top: 10px;
+  background-color: rgb(207, 151, 151);
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 5%;
 }
 
 #outlet-title {
   grid-area: outlet-title;
   font-size: 3rem;
   font-family: "Gabarito", cursive;
+  background-color: rgb(207, 151, 151);
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 5%;
 }
 
 #nyheter-title {
   grid-area: nyheter-title;
   font-size: 3rem;
   font-family: "Gabarito", cursive;
+  background-color: rgb(207, 151, 151);
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+#k_style {
+  font-size: 50px;
+  font-family: "Poiret One", cursive;
 }
 
 #kvinnesko {
@@ -182,10 +204,12 @@ main {
 
 #herresko {
   grid-area: herresko;
+  font-family: "Poiret One", cursive;
 }
 
 #barnesko {
   grid-area: barnesko;
+  font-family: "Poiret One", cursive;
 }
 
 #outlet1 {
@@ -236,8 +260,10 @@ main {
   flex-direction: column;
 }
 #main-grid article h3 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 2rem;
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #om-oss {
@@ -321,6 +347,7 @@ footer ul li {
     justify-self: flex-start;
     padding-left: 4rem;
     font-size: 2.5rem;
+    text-decoration: none;
   }
   #site-logo:hover {
     font-size: 2.53rem;
@@ -349,7 +376,7 @@ footer ul li {
   #main-navigation ul li p {
     display: block;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 700;
   }
   .h-menu {
     display: flex;
@@ -389,12 +416,11 @@ footer ul li {
     border-radius: 5%;
     padding: 0.5rem;
   }
+  #pop-kateg {
+    font-size: 3rem;
+  }
   #main-grid {
     grid-template-areas: "pop-kateg pop-kateg pop-kateg" "herresko kvinnesko barnesko" "outlet-title outlet-title outlet-title" "outlet1 outlet2 outlet3" "nyheter-title nyheter-title nyheter-title" "reklame1 reklame2 reklame3";
-  }
-  #main-grid article h3 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 2rem;
   }
   #footer-grid {
     grid-template-areas: "om-oss kundeservice vil-og-bet sosiale";
