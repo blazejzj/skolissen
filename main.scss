@@ -199,43 +199,66 @@ main {
 
 #pop-kateg {
     grid-area: pop-kateg;
-    font-size: 28px;
+    font-size: 3rem;
     font-family: $font-titles;
     padding-top: 10px;
 }
+
+#outlet-title {
+    grid-area: outlet-title;
+    font-size: 3rem;
+    font-family: $font-titles;
+}
+
+#nyheter-title {
+    grid-area: nyheter-title;
+    font-size: 3rem;
+    font-family: $font-titles;
+}
+
 #kvinnesko {
     grid-area: kvinnesko;
 }
+
 #herresko {
     grid-area: herresko;
 }
+
 #barnesko {
     grid-area: barnesko;
 }
+
 #outlet1 {
     grid-area: outlet1;
 }
+
 #outlet2 {
     grid-area: outlet2;
 }
+
 #outlet3 {
     grid-area: outlet3;
 }
+
 #reklame1 {
     grid-area: reklame1;
 }
+
 #reklame2 {
     grid-area: reklame2;
 }
+
 #reklame3 {
     grid-area: reklame3;
 }
 
 .b_categ {
-    // width: 310px;
-    // height: 200px;
-    width: 100%;
-    height: 100%
+    max-width: 310px; // you had this commented out; can be adjusted
+    max-height: 200px; // you had this commented out; can be adjusted
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; // ensures images cover the area without distortion
+    display: block; // to remove any bottom margin/spacing
 }
 
 #main-grid {
@@ -247,8 +270,15 @@ main {
     'herresko'
     'kvinnesko'
     'barnesko'
+    'outlet-title'
     'outlet1'
-    'reklame1';
+    'outlet2'
+    'outlet3'
+    'nyheter-title'
+    'reklame1'
+    'reklame2'
+    'reklame3';
+
     article {
         @include flex-center;
         flex-direction: column;
@@ -329,6 +359,8 @@ footer {
 
 
 @media only screen and (min-width:1281px) {
+
+
     // TOPBANNER / HEADER
 
 #campaign-banner:hover {
@@ -419,5 +451,28 @@ footer {
         }
     }
 }
+
+// ##### MAIN #####
+
+
+#main-grid {
+    grid-template-areas: 
+    'pop-kateg pop-kateg pop-kateg'
+    'herresko kvinnesko barnesko'
+    'outlet-title outlet-title outlet-title'
+    'outlet1 outlet2 outlet3'
+    'nyheter-title nyheter-title nyheter-title'
+    'reklame1 reklame2 reklame3';
+    article {
+        h3 {
+            font-family: $font-roboto;
+            font-size: 2rem;
+        }
+    }
 }
 
+#footer-grid {
+    grid-template-areas:
+    'om-oss kundeservice vil-og-bet sosiale';
+}
+}
