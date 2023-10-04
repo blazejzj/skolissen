@@ -80,9 +80,9 @@ body {
     grid-area: icon-navigation;
 }
 
-// TOPBANNER / HEADER
+// ######### CAMPAIGN / HEADER #########
 #campaign-banner {
-    background-color: rgb(238, 236, 138);
+    background-color: rgb(148, 88, 88);;
     display: block;
     padding: 5px;
     border-bottom: 1px solid grey;
@@ -199,7 +199,7 @@ nav.h-menu .content ul {
 
 main {
     background-color: rgb(230, 230, 230);
-    margin: 1rem;
+    margin: 2rem;
     border-radius: 2%;
     padding-bottom: 5rem;
 }
@@ -209,8 +209,8 @@ main {
     @include font-set($font-titles, 2rem, 700);
     padding-top: 10px;
     background-color: rgb(207, 151, 151);
-    height: 5rem;
-    padding: 1rem;
+    height: 5.5rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     border-radius: 5%;
     justify-self: center;
 }
@@ -313,11 +313,13 @@ main {
     article {
         @include flex(column, center, center);
         h3 {
-            @include font-set($font-main-undercategories, 2.5rem, 500);
+            @include font-set($font-main-undercategories, 3rem, 600);
             margin-bottom: 1rem;
         }
     }
 }
+
+// ######### KATEGORI HTML #########
 
 // ######### FOOTER #########
 #bottom-footer {
@@ -420,10 +422,16 @@ footer {
     @include flex(column, center, center);
 }
 
+
+
+// ######### MEDIA QUERY FOR DESKTOP #########
+
+
+
+
 @media only screen and (min-width:1281px) {
 
-
-    // TOPBANNER / HEADER
+// ######### CAMPAIGN / HEADER #########
 
 #campaign-banner:hover {
     font-size: 1.11rem;
@@ -489,7 +497,7 @@ footer {
             a {
 
                 color: #2c2d2e;
-                @include font-set($font-header_category, 1.5rem);
+                @include font-set($font-header_category, 1.7rem);
                 }
             }
         }
@@ -508,15 +516,20 @@ nav.h-menu .content ul {
             height: 1.5rem;
             border-radius: 5%;
             padding: 0.5rem;
-            margin-top: 8px;
+            margin-top: 12px;
         }
     }
 }
 
-// ##### MAIN #####
+// ######### MAIN #########
+
+main {
+    margin: 5rem;
+}
 
 #pop-kateg {
     font-size: 3rem;
+    padding-bottom: 5rem;
 }
 
 #outlet-title {
@@ -554,13 +567,17 @@ nav.h-menu .content ul {
     'outlet1 outlet2 outlet3'
     'nyheter-title nyheter-title nyheter-title'
     'reklame1 reklame2 reklame3';
+    padding: 7rem 0 7rem 0;
 }
+// ######### KATEGORI HTML #########
+
+// ######### FOOTER #########
 
 #footer-grid {
     grid-template-areas:
     'om-oss kundeservice vil-og-bet sosiale';
     align-items: start;
-    padding: 0 6rem 0 6rem;
+    padding: 4rem 7rem 0 7rem;
     li {
         border: none;
     }
@@ -575,9 +592,6 @@ footer {
     }
 }
 
-// #payment-show {
-//     margin: 2rem;
-// }
 
 #bottom_footer {
     display: flex;
