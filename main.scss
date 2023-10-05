@@ -320,8 +320,8 @@ main {
 
 // ######### KATEGORI HTML #########
 
-#innledning_kategori_side {
-    grid-area: innledning_kategori_side;
+#introduction_kategory_side {
+    grid-area: introduction_kategory_side;
     padding: 3.5rem 5rem 2rem 3.5rem;
     h3 {
         @include font-set($font-titles, 2rem, 700, $align: center);
@@ -332,13 +332,13 @@ main {
         line-height: 1.2rem;
     }
 }
-#navigation_kategori_side {
-    grid-area: navigation_kategori_side;
+#navigation_kategory_side {
+    grid-area: navigation_kategory_side;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgb(207, 151, 151);
 }
-#produkter_kategori_side {
-    grid-area: produkter_kategori_side;
+#products_kategory_side {
+    grid-area: products_kategory_side;
     @include flex(column,center,center );
     button {
         margin-top: 5rem;
@@ -352,19 +352,19 @@ main {
     }
 }
 
-#grid_kategori_side {
+#grid_kategory_side {
     display: grid;
     gap: 2rem;
     grid-template-areas: 
-    'innledning_kategori_side'
-    'navigation_kategori_side'
-    'produkter_kategori_side';
+    'introduction_kategory_side'
+    'navigation_kategory_side'
+    'products_kategory_side';
 }
 
 
 
-#menu_kategori_side {
-    grid-area: menu_kategori_side;
+#menu_kategory_side {
+    grid-area: menu_kategory_side;
     padding-bottom: 2rem;
     ul {
         @include flex(row,center,center);
@@ -389,8 +389,8 @@ main {
     }
 }
 
-#kategori_side_buttons {
-    grid-area: kategori_side_buttons;
+#kategory_side_buttons {
+    grid-area: kategory_side_buttons;
     @include flex(row,space-around,space-around);
     button {
         display: flex;
@@ -408,15 +408,15 @@ main {
     }
 }
 
-#grid_nav_kategori_side {
+#grid_nav_kategory_side {
     display: grid;
     gap: 1rem;
     grid-template-areas: 
-    'menu_kategori_side'
-    'kategori_side_buttons';
+    'menu_kategory_side'
+    'kategory_side_buttons';
 }
 
-.kategori_side_product_picture {
+.kategory_side_product_picture {
     max-width: 150px;
     max-height: 200px;
     width: 100%; 
@@ -456,35 +456,35 @@ main {
 
 
 
-#produkt_bilde {
-    grid-area: produkt_bilde;
+#product_picture {
+    grid-area: product_picture;
 }
 
-#produkt_bilde_beskrivelse {
-    grid-area: produkt_bilde_beskrivelse;
+#product_picture_description {
+    grid-area: product_picture_description;
 }
 
-#produktet {
-    grid-area: produktet;
+#product {
+    grid-area: product;
     display: grid;
     grid-template-areas:
-    'produkt_bilde'
-    'produkt_bilde_beskrivelse';
+    'product_picture'
+    'product_picture_description';
 }
 
-#produkt_info {
-    grid-area: produkt_info;
+#product_info {
+    grid-area: product_info;
 }
 
-#produkt_relatert {
-    grid-area: produkt_relatert;
+#product_related {
+    grid-area: product_related;
 }
 
 #produkt_main_grid {
     grid-template-areas: 
-    'produktet'
-    'produkt_info'
-    'produkt_relatert';
+    'product'
+    'product_info'
+    'product_related';
 }
 
 // ######### FOOTER #########
@@ -738,7 +738,7 @@ main {
 }
 // ######### KATEGORI HTML #########
 
-#menu_kategori_side {
+#menu_kategory_side {
     ul {
         gap: 2.5rem;
         .extra_kategories {
@@ -752,7 +752,7 @@ main {
     }
 }
 
-#kategori_side_buttons {
+#kategory_side_buttons {
     gap: 50rem;
 }
 
@@ -766,7 +766,7 @@ main {
     }
 }
 
-.kategori_side_product_picture {
+.kategory_side_product_picture {
     max-width: 300px;
     max-height: 250px;
 }

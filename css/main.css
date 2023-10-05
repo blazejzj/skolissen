@@ -321,11 +321,11 @@ main {
   margin-bottom: 1rem;
 }
 
-#innledning_kategori_side {
-  grid-area: innledning_kategori_side;
+#introduction_kategory_side {
+  grid-area: introduction_kategory_side;
   padding: 3.5rem 5rem 2rem 3.5rem;
 }
-#innledning_kategori_side h3 {
+#introduction_kategory_side h3 {
   font-family: "Gabarito", cursive;
   font-size: 2rem;
   font-weight: 700;
@@ -333,7 +333,7 @@ main {
   text-align: center;
   padding-bottom: 1rem;
 }
-#innledning_kategori_side p {
+#introduction_kategory_side p {
   font-family: "Mukta Vaani", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -342,20 +342,20 @@ main {
   line-height: 1.2rem;
 }
 
-#navigation_kategori_side {
-  grid-area: navigation_kategori_side;
+#navigation_kategory_side {
+  grid-area: navigation_kategory_side;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgb(207, 151, 151);
 }
 
-#produkter_kategori_side {
-  grid-area: produkter_kategori_side;
+#products_kategory_side {
+  grid-area: products_kategory_side;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#produkter_kategori_side button {
+#products_kategory_side button {
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
@@ -373,27 +373,27 @@ main {
   border-radius: 5%;
 }
 
-#grid_kategori_side {
+#grid_kategory_side {
   display: grid;
   gap: 2rem;
-  grid-template-areas: "innledning_kategori_side" "navigation_kategori_side" "produkter_kategori_side";
+  grid-template-areas: "introduction_kategory_side" "navigation_kategory_side" "products_kategory_side";
 }
 
-#menu_kategori_side {
-  grid-area: menu_kategori_side;
+#menu_kategory_side {
+  grid-area: menu_kategory_side;
   padding-bottom: 2rem;
 }
-#menu_kategori_side ul {
+#menu_kategory_side ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
-#menu_kategori_side ul .extra_kategories {
+#menu_kategory_side ul .extra_kategories {
   display: none;
 }
-#menu_kategori_side ul li {
+#menu_kategory_side ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -404,7 +404,7 @@ main {
   height: 2.2rem;
   border-radius: 15%;
 }
-#menu_kategori_side ul li a {
+#menu_kategory_side ul li a {
   text-decoration: none;
   color: white;
   font-family: "Mukta Vaani", sans-serif;
@@ -414,14 +414,14 @@ main {
   text-align: left;
 }
 
-#kategori_side_buttons {
-  grid-area: kategori_side_buttons;
+#kategory_side_buttons {
+  grid-area: kategory_side_buttons;
   display: flex;
   flex-direction: row;
   align-items: space-around;
   justify-content: space-around;
 }
-#kategori_side_buttons button {
+#kategory_side_buttons button {
   display: flex;
   display: flex;
   flex-direction: row;
@@ -438,17 +438,17 @@ main {
   font-style: normal;
   text-align: left;
 }
-#kategori_side_buttons #filtrer_button {
+#kategory_side_buttons #filtrer_button {
   background-color: rgb(110, 108, 108);
 }
 
-#grid_nav_kategori_side {
+#grid_nav_kategory_side {
   display: grid;
   gap: 1rem;
-  grid-template-areas: "menu_kategori_side" "kategori_side_buttons";
+  grid-template-areas: "menu_kategory_side" "kategory_side_buttons";
 }
 
-.kategori_side_product_picture {
+.kategory_side_product_picture {
   max-width: 150px;
   max-height: 200px;
   width: 100%;
@@ -482,30 +482,30 @@ main {
   align-self: flex-start;
 }
 
-#produkt_bilde {
-  grid-area: produkt_bilde;
+#product_picture {
+  grid-area: product_picture;
 }
 
-#produkt_bilde_beskrivelse {
-  grid-area: produkt_bilde_beskrivelse;
+#product_picture_description {
+  grid-area: product_picture_description;
 }
 
-#produktet {
-  grid-area: produktet;
+#product {
+  grid-area: product;
   display: grid;
-  grid-template-areas: "produkt_bilde" "produkt_bilde_beskrivelse";
+  grid-template-areas: "product_picture" "product_picture_description";
 }
 
-#produkt_info {
-  grid-area: produkt_info;
+#product_info {
+  grid-area: product_info;
 }
 
-#produkt_relatert {
-  grid-area: produkt_relatert;
+#product_related {
+  grid-area: product_related;
 }
 
 #produkt_main_grid {
-  grid-template-areas: "produktet" "produkt_info" "produkt_relatert";
+  grid-template-areas: "product" "product_info" "product_related";
 }
 
 #bottom-footer {
@@ -778,16 +778,16 @@ footer ul li {
     grid-template-areas: "pop-kateg pop-kateg pop-kateg" "herresko kvinnesko barnesko" "outlet-title outlet-title outlet-title" "outlet1 outlet2 outlet3" "nyheter-title nyheter-title nyheter-title" "reklame1 reklame2 reklame3";
     padding: 7rem 0 7rem 0;
   }
-  #menu_kategori_side ul {
+  #menu_kategory_side ul {
     gap: 2.5rem;
   }
-  #menu_kategori_side ul .extra_kategories {
+  #menu_kategory_side ul .extra_kategories {
     display: flex;
   }
-  #menu_kategori_side ul li a {
+  #menu_kategory_side ul li a {
     font-size: 1.1rem;
   }
-  #kategori_side_buttons {
+  #kategory_side_buttons {
     gap: 50rem;
   }
   #product_pictures_grid {
@@ -798,7 +798,7 @@ footer ul li {
   #product_pictures_grid #product9 {
     display: flex;
   }
-  .kategori_side_product_picture {
+  .kategory_side_product_picture {
     max-width: 300px;
     max-height: 250px;
   }
