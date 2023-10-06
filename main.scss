@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Gabarito:wght@400;700;900&family=Lilita+One&family=Mukta+Vaani:wght@500;600;700;800&family=Passion+One:wght@400;700;900&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
 @import '_variables';
 
+#background {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -168,7 +172,7 @@ nav.h-menu .content ul {
 // ########## MAIN #########
 
 main {
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(140, 204, 215, 0.16);
     margin: 1rem;
     border-radius: 2%;
     padding-bottom: 5rem;
@@ -700,6 +704,23 @@ footer {
 
 // ######### CAMPAIGN / HEADER #########
 
+
+#background {
+    display: initial;
+    margin: 0 0 3rem 0;
+    h2 {
+        @include font-set($font-titles, 10rem, 700, $align: center);
+        background-image: url(../img/skolissen.png);
+        width: 100%;
+        height: 35rem;
+        background-size: cover;
+        background-position: center;
+        margin: 5rem auto auto auto;
+        color: rgb(255, 255, 255);
+        padding-top: 5rem;
+    }
+
+}
 #campaign-banner:hover {
     font-size: 1.11rem;
 }
@@ -792,12 +813,14 @@ nav.h-menu .content ul {
 // ######### MAIN #########
 
 main {
-    margin: 5rem;
+    margin: 1rem;
 }
 
 #pop-kateg {
     font-size: 3rem;
     padding-bottom: 5rem;
+    width: 80rem;
+    text-align: center;
 }
 
 #outlet-title {
@@ -854,7 +877,7 @@ main {
 }
 
 #kategory_side_buttons {
-    gap: 25rem;
+    gap: 47rem;
 }
 
 #product_pictures_grid {
@@ -873,7 +896,7 @@ main {
 }
 
 #introduction_kategory_side {
-    margin: 0 50rem 0 15rem;
+    margin: 0 30rem 0 2.5rem;
     h3 {
         text-align: left;
     }
