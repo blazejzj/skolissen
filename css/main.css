@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Gabarito:wght@400;700;900&family=Lilita+One&family=Mukta+Vaani:wght@500;600;700;800&family=Passion+One:wght@400;700;900&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
-#background {
-  display: none;
+#background h2 {
+  font-family: "Gabarito", cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  background-image: url(../img/skolissen.png);
+  width: 26rem;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem auto auto auto;
+  color: rgb(255, 255, 255);
+  padding-top: 7rem;
 }
 
 * {
@@ -994,11 +1006,11 @@ footer ul li {
   }
   #nyheter-title {
     font-size: 7rem;
-    color: white;
-    background-image: url(../img/ad2.png);
+    color: rgb(255, 255, 255);
+    background-image: url(../img/nyheter.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: -35rem;
     height: 15rem;
     padding-top: 2rem;
     margin-top: 10rem;
