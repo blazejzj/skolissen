@@ -1,5 +1,12 @@
-woman_category, kid_category, male_category
+
+NB: JEG VIL GJØRE OPPMERKSOM PÅ AT JEG HAR PRØVD Å LAGE SÅ MANGE KNAPPER SOM MULIG TIL FUNKSJONELLE, DESVERRE ER DET SÅNT AT ENKELTE KNAPPER HAR INGEN FUNKSJON/TAR DEG TIL SAMME SIDE
+
+KILDEHENVISNINGER
+
+ALLE SLAGS BILDER BRUKT PÅ NETTSIDEN, SOM IKKE ER IKONER ELLER FARGER HAR BLITT LAGET AV:
 https://app.leonardo.ai/
 
-home_icon, key_icon, heart_icon, cart_icon
-Taken from https://fontawesome.com/search?q=cart&o=r
+
+
+ALLE SMÅ IKONER (GRATIS-VERSJONER) HAR BLITT TATT I BRUK FRA:
+https://fontawesome.com/search?q=cart&o=r

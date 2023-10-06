@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+* button {
+  cursor: pointer;
+}
 
 .main-color {
   background-color: rgb(207, 151, 151);
@@ -33,12 +36,14 @@ body {
 
 #hamburger-icon {
   height: 25px;
+  width: 25px;
   position: relative;
-  top: 2px;
+  top: 7px;
 }
 
 #search-icon {
-  height: 20px;
+  height: 25px;
+  width: 25px;
   position: relative;
   top: 4px;
 }
@@ -179,7 +184,7 @@ nav.h-menu .content ul {
 
 main {
   background-color: rgb(230, 230, 230);
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 2%;
   padding-bottom: 5rem;
 }
@@ -292,8 +297,8 @@ main {
 .b_categ {
   max-width: 350px;
   max-height: 300px;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -361,15 +366,15 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-family: "Gabarito", cursive;
-  font-size: 3rem;
-  font-weight: 400;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   font-style: normal;
   text-align: center;
   background-color: rgb(110, 108, 108);
   color: white;
-  width: 22rem;
   height: 6rem;
+  width: 22rem;
   border-radius: 5%;
 }
 
@@ -400,8 +405,8 @@ main {
   justify-content: center;
   list-style: none;
   background-color: rgb(148, 88, 88);
-  width: 6rem;
   height: 2.2rem;
+  width: 6rem;
   border-radius: 15%;
 }
 #menu_kategory_side ul li a {
@@ -427,8 +432,8 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 7rem;
   height: 2.5rem;
+  width: 7rem;
   border-radius: 10%;
   border: 1px grey solid;
   background-color: white;
@@ -437,9 +442,17 @@ main {
   font-weight: 700;
   font-style: normal;
   text-align: left;
+  cursor: pointer;
 }
 #kategory_side_buttons #filtrer_button {
   background-color: rgb(110, 108, 108);
+}
+#kategory_side_buttons a {
+  text-decoration: none;
+}
+#kategory_side_buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: grey;
 }
 
 #grid_nav_kategory_side {
@@ -451,8 +464,8 @@ main {
 .kategory_side_product_picture {
   max-width: 150px;
   max-height: 200px;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -476,10 +489,20 @@ main {
 #product_pictures_grid li h4 {
   display: flex;
   align-self: flex-start;
+  font-family: "Gabarito", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
 }
 #product_pictures_grid li p {
   display: flex;
   align-self: flex-start;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
 }
 
 #product_main_grid {
@@ -489,22 +512,23 @@ main {
 #product_picture {
   grid-area: product_picture;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
 }
 #product_picture img {
-  width: 350px;
   height: 350px;
-  width: 100%;
+  width: 350px;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   margin: 1rem;
   border: 1px solid black;
 }
 #product_picture a img {
-  max-width: 25px;
-  max-height: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 #product_picture_description {
@@ -513,15 +537,23 @@ main {
 }
 #product_picture_description #color_name {
   margin-top: 3rem;
-  margin: 3rem 0 0 0.7rem;
+  margin: 3rem 0 0 1.7rem;
 }
 #product_picture_description h3 {
+  font-family: "Passion One", cursive;
   font-size: 2.5rem;
-  margin-left: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  margin-left: 1.8rem;
 }
 #product_picture_description p {
+  margin-left: 1.8rem;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.1rem;
-  margin-left: 1.1rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
 }
 #product_picture_description ul {
   display: flex;
@@ -535,6 +567,7 @@ main {
   list-style: none;
   width: 4rem;
   height: 4rem;
+  border: 1px solid black;
 }
 #product_picture_description ul #red {
   background-color: red;
@@ -550,14 +583,18 @@ main {
 }
 #product_picture_description button {
   display: block;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
 }
 
 #size_button {
   background-color: rgb(202, 196, 196);
   border: 1px solid black;
+  font-family: "Mukta Vaani", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
   width: 20.5rem;
   border-radius: 5%;
 }
@@ -566,7 +603,11 @@ main {
   background-color: rgb(105, 105, 105);
   border: 1px solid black;
   color: white;
-  font-size: 2rem;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
   width: 22rem;
   border-radius: 5%;
 }
@@ -581,14 +622,24 @@ main {
   grid-area: product_info;
 }
 #product_info h3 {
+  font-family: "Passion One", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
   padding-bottom: 1rem;
 }
 #product_info p {
-  line-height: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  line-height: 1.3rem;
 }
 #product_info button {
-  width: 8rem;
   height: 2rem;
+  width: 8rem;
   margin-top: 1rem;
   border-radius: 10%;
   border: 1px solid black;
@@ -600,21 +651,33 @@ main {
   justify-content: center;
   padding: 1rem;
 }
+#product_info #product_text button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
 #product_info #reviews {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-#product_info #reviews h3 {
+#product_info #reviews a {
+  text-decoration: none;
+}
+#product_info #reviews a h3 {
   font-size: 2rem;
   padding: 1.5rem 0 1.2rem 0;
   margin-left: 1rem;
+  color: black;
 }
 #product_info #reviews #plus_icon {
-  width: 25px;
   height: 25px;
+  width: 25px;
   margin-right: 1.5rem;
 }
 
@@ -631,8 +694,8 @@ main {
 }
 
 .related_pictures {
-  width: 300px;
   height: 250px;
+  width: 300px;
 }
 
 #product_related {
@@ -645,7 +708,11 @@ main {
 }
 #product_related h2 {
   margin-top: 2rem;
+  font-family: "Gabarito", cursive;
   font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
 }
 
 #bottom-footer {
@@ -693,8 +760,8 @@ main {
 }
 
 .payment-icon {
-  width: 25px;
   height: 25px;
+  width: 25px;
 }
 
 footer {
@@ -928,7 +995,7 @@ footer ul li {
     font-size: 1.1rem;
   }
   #kategory_side_buttons {
-    gap: 50rem;
+    gap: 25rem;
   }
   #product_pictures_grid {
     grid-template-columns: repeat(3, 1fr);
@@ -942,6 +1009,12 @@ footer ul li {
     max-width: 300px;
     max-height: 250px;
   }
+  #introduction_kategory_side {
+    margin: 0 50rem 0 15rem;
+  }
+  #introduction_kategory_side h3 {
+    text-align: left;
+  }
   #product {
     display: grid;
     grid-template-areas: "product_picture product_picture_description";
@@ -954,8 +1027,8 @@ footer ul li {
     margin-top: 2rem;
   }
   #product_picture img {
-    width: 600px;
     height: 500px;
+    width: 600px;
     margin: 1rem 0 2rem 5rem;
   }
   #product_picture a img {
@@ -985,12 +1058,12 @@ footer ul li {
     padding: 0.5rem;
   }
   #product_picture_description #size_button {
-    width: 22rem;
     height: 3rem;
+    width: 22rem;
   }
   #product_picture_description #cart_button {
-    width: 30rem;
     height: 5rem;
+    width: 30rem;
   }
   #product_info {
     margin-left: 4.7rem;
@@ -1022,8 +1095,8 @@ footer ul li {
     margin-left: 1rem;
   }
   #product_info #reviews #plus_icon {
-    width: 25px;
     height: 25px;
+    width: 25px;
     margin-right: 1.5rem;
   }
   #relatert1 {
@@ -1036,8 +1109,8 @@ footer ul li {
     grid-area: relatert3;
   }
   .related_pictures {
-    width: 350px;
     height: 300px;
+    width: 350px;
   }
   #name_of_related {
     grid-area: name_of_related;
@@ -1070,6 +1143,7 @@ footer ul li {
   #bottom_footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     gap: 3rem;
   }

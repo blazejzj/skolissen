@@ -1,0 +1,36 @@
+// #### VARIABLES ####
+$font-roboto: 'Roboto Condensed', sans-serif;
+$font-titles: 'Gabarito', cursive;
+$font-logo: 'Lilita One', cursive;
+$font-header_category: 'Passion One', cursive;
+$font-main-pop-categ: 'BIZ UDPGothic', sans-serif;
+$font-main-undercategories: 'Mukta Vaani', sans-serif;
+$basic_font: Arial, Helvetica, sans-serif;
+
+
+@mixin flex($direction: row, $align: initial, $justify: initial) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin font-set($family: $basic_font, $size, $weight: normal, $style: normal, $align: left) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    text-align: $align;
+}
+
+ 
+@mixin grid-center-items {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin set-size-picture($height, $width){
+    height: $height;
+    width: $width;
+}
