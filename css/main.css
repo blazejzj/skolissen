@@ -482,12 +482,93 @@ main {
   align-self: flex-start;
 }
 
+#product_main_grid {
+  grid-template-areas: "product" "product_info" "product_related";
+}
+
 #product_picture {
   grid-area: product_picture;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#product_picture img {
+  width: 350px;
+  height: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 1rem;
+  border: 1px solid black;
+}
+#product_picture a img {
+  max-width: 25px;
+  max-height: 25px;
 }
 
 #product_picture_description {
   grid-area: product_picture_description;
+  padding: 1rem;
+}
+#product_picture_description #color_name {
+  margin-top: 3rem;
+  margin: 3rem 0 0 0.7rem;
+}
+#product_picture_description h3 {
+  font-size: 2.5rem;
+  margin-left: 1.1rem;
+}
+#product_picture_description p {
+  font-size: 1.1rem;
+  margin-left: 1.1rem;
+}
+#product_picture_description ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+#product_picture_description ul li {
+  list-style: none;
+  width: 4rem;
+  height: 4rem;
+}
+#product_picture_description ul #red {
+  background-color: red;
+}
+#product_picture_description ul #blue {
+  background-color: blue;
+}
+#product_picture_description ul #pink {
+  background-color: pink;
+}
+#product_picture_description ul #green {
+  background-color: green;
+}
+#product_picture_description button {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+#size_button {
+  background-color: rgb(202, 196, 196);
+  border: 1px solid black;
+  font-size: 1.5rem;
+  width: 20.5rem;
+  border-radius: 5%;
+}
+
+#cart_button {
+  background-color: rgb(105, 105, 105);
+  border: 1px solid black;
+  color: white;
+  font-size: 2rem;
+  width: 22rem;
+  border-radius: 5%;
 }
 
 #product {
@@ -499,13 +580,72 @@ main {
 #product_info {
   grid-area: product_info;
 }
+#product_info h3 {
+  padding-bottom: 1rem;
+}
+#product_info p {
+  line-height: 1.2rem;
+}
+#product_info button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+#product_info #product_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+#product_info #reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#product_info #reviews h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0 1.2rem 0;
+  margin-left: 1rem;
+}
+#product_info #reviews #plus_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 1.5rem;
+}
+
+#relatert1 {
+  grid-area: relatert1;
+}
+
+#relatert2 {
+  grid-area: relatert2;
+}
+
+#relatert3 {
+  grid-area: relatert3;
+}
+
+.related_pictures {
+  width: 300px;
+  height: 250px;
+}
 
 #product_related {
   grid-area: product_related;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
-
-#produkt_main_grid {
-  grid-template-areas: "product" "product_info" "product_related";
+#product_related h2 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
 }
 
 #bottom-footer {
@@ -801,6 +941,117 @@ footer ul li {
   .kategory_side_product_picture {
     max-width: 300px;
     max-height: 250px;
+  }
+  #product {
+    display: grid;
+    grid-template-areas: "product_picture product_picture_description";
+  }
+  #product_picture {
+    grid-area: product_picture;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  #product_picture img {
+    width: 600px;
+    height: 500px;
+    margin: 1rem 0 2rem 5rem;
+  }
+  #product_picture a img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+  #product_picture_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex;
+    margin-top: 1.6rem;
+  }
+  #product_picture_description #color_name {
+    margin-top: 3rem;
+    margin: 6rem 0 0 0;
+  }
+  #product_picture_description h3 {
+    margin-left: 0;
+  }
+  #product_picture_description p {
+    margin-left: 0;
+    line-height: 2rem;
+  }
+  #product_picture_description button {
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
+  }
+  #product_picture_description #size_button {
+    width: 22rem;
+    height: 3rem;
+  }
+  #product_picture_description #cart_button {
+    width: 30rem;
+    height: 5rem;
+  }
+  #product_info {
+    margin-left: 4.7rem;
+  }
+  #product_info h3 {
+    padding-bottom: 1rem;
+  }
+  #product_info p {
+    line-height: 1.5rem;
+    margin-right: 45rem;
+  }
+  #product_info button {
+    margin: 1rem 0 3rem 7rem;
+  }
+  #product_info #product_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  #product_info #reviews {
+    width: 20rem;
+    margin: 1rem 0 6rem 1rem;
+  }
+  #product_info #reviews h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0 1.2rem 0;
+    margin-left: 1rem;
+  }
+  #product_info #reviews #plus_icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 1.5rem;
+  }
+  #relatert1 {
+    grid-area: relatert1;
+  }
+  #relatert2 {
+    grid-area: relatert2;
+  }
+  #relatert3 {
+    grid-area: relatert3;
+  }
+  .related_pictures {
+    width: 350px;
+    height: 300px;
+  }
+  #name_of_related {
+    grid-area: name_of_related;
+    border-bottom: 1px solid black;
+  }
+  #product_related {
+    grid-area: product_related;
+    display: grid;
+    grid-template-areas: "name_of_related name_of_related name_of_related" "related1 related2 related3";
+  }
+  #product_related h2 {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 2rem;
   }
   #footer-grid {
     grid-template-areas: "om-oss kundeservice vil-og-bet sosiale";
