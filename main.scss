@@ -84,7 +84,8 @@ body {
     gap: 1rem;
     grid-template-areas: 
     'site-logo main-navigation';
-    border-bottom: 1px solid grey;
+    border-bottom: transparent;
+    box-shadow: 0px 5px 15px rgb(202, 201, 201);
 }
 
 #site-logo {
@@ -122,6 +123,11 @@ body {
         background: none;
         border: none;
     }
+    form {
+        input {
+            outline: none;
+        }
+    }
 }
 
 .h-menu {
@@ -149,11 +155,11 @@ body {
         border: none;
         li {
             list-style-type: none;
-            padding: 0.5rem 2rem 0.5rem 0;
+            padding: 0.2rem 2rem 0.2rem 0;
             a { 
                 margin: 0.3rem 0 0 0.6rem;
                 text-decoration: none;
-                font-family: $font-header_category;
+                @include font-set($font-main-undercategories, 1rem, 700);
                 color: #2c2d2e;
                 &:hover {
                     text-decoration: underline;
@@ -638,7 +644,8 @@ footer {
     grid-template-areas: 
     'footer-info'
     'bottom-footer';
-    border-top: solid 1px grey;
+    border-top: transparent;
+    box-shadow: 0px 5px 15px 15px rgb(221, 221, 221);
     background-color: #e9e9e9;
     padding-bottom: 3rem;
     ul {
@@ -672,9 +679,11 @@ footer {
             border-radius: 15%;
             background-color: #dddddd;
             text-decoration: none;
+            color: black;
             &:hover {
                 color: black;
                 background-color: #d6d6d6;
+                text-decoration: underline
             }
         }
     }
@@ -779,9 +788,7 @@ footer {
     gap: 2.5rem;
 }
 
-#search-bar {
-    margin-bottom: 6px;
-}
+
 
 .content {
     position: initial;
@@ -796,7 +803,7 @@ footer {
             a {
 
                 color: #2c2d2e;
-                @include font-set($font-header_category, 1.5rem);
+                @include font-set($font-main-undercategories, 1.2rem, 700);
                 }
             }
         }
@@ -808,6 +815,7 @@ nav.h-menu .content ul {
 }
 
 #search-bar {
+    margin-bottom: 6px;
     form {
         input {
             background-color: rgb(252, 252, 252);

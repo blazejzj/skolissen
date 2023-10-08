@@ -89,7 +89,8 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-areas: "site-logo main-navigation";
-  border-bottom: 1px solid grey;
+  border-bottom: transparent;
+  box-shadow: 0px 5px 15px rgb(202, 201, 201);
 }
 
 #site-logo {
@@ -139,6 +140,9 @@ body {
   background: none;
   border: none;
 }
+#search-bar form input {
+  outline: none;
+}
 
 .h-menu {
   position: relative;
@@ -170,12 +174,16 @@ body {
 }
 .content ul li {
   list-style-type: none;
-  padding: 0.5rem 2rem 0.5rem 0;
+  padding: 0.2rem 2rem 0.2rem 0;
 }
 .content ul li a {
   margin: 0.3rem 0 0 0.6rem;
   text-decoration: none;
-  font-family: "Passion One", cursive;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
   color: #2c2d2e;
 }
 .content ul li a:hover {
@@ -783,7 +791,8 @@ main {
 footer {
   display: grid;
   grid-template-areas: "footer-info" "bottom-footer";
-  border-top: solid 1px grey;
+  border-top: transparent;
+  box-shadow: 0px 5px 15px 15px rgb(221, 221, 221);
   background-color: #e9e9e9;
   padding-bottom: 3rem;
 }
@@ -825,10 +834,12 @@ footer ul li {
   border-radius: 15%;
   background-color: #dddddd;
   text-decoration: none;
+  color: black;
 }
 #footer-grid li a:hover {
   color: black;
   background-color: #d6d6d6;
+  text-decoration: underline;
 }
 
 #sosiale {
@@ -942,9 +953,6 @@ footer ul li {
   #search-and-ham {
     gap: 2.5rem;
   }
-  #search-bar {
-    margin-bottom: 6px;
-  }
   .content {
     position: initial;
     display: flex;
@@ -966,15 +974,18 @@ footer ul li {
   }
   .content ul li a {
     color: #2c2d2e;
-    font-family: "Passion One", cursive;
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     font-style: normal;
     text-align: left;
   }
   nav.h-menu .content ul {
     display: flex !important;
     flex-direction: row !important;
+  }
+  #search-bar {
+    margin-bottom: 6px;
   }
   #search-bar form input {
     background-color: rgb(252, 252, 252);
