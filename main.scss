@@ -15,6 +15,68 @@
     }
 }
 
+#background_login {
+    position: relative;
+    padding-top: 7rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/skolissen.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6;
+        z-index: -1; 
+    }
+
+    #login-form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        padding: 2rem;
+        border: 1px solid #4e4e4e;
+        border-radius: 10%;
+        h3 {
+            @include font-set($font-titles, 1.4rem, 700, $align:center);
+            margin-bottom: 1.1rem;
+            text-decoration: underline;
+            text-decoration-color: rgb(148, 88, 88);
+            text-decoration-thickness: 3px;
+            text-underline-offset: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: rgb(8, 8, 8);
+            @include font-set($font-main-undercategories, 1.1rem, 700, $align:center)
+        }
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5%;
+            outline: 1px solid grey;
+            margin-bottom: 1.1rem;
+        }
+        button {
+            padding: 0.5rem 0.5rem;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(148, 88, 88);
+            color: white;
+            cursor: pointer;
+            &:hover {
+                background: 005f5f;
+            }
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -757,7 +819,6 @@ footer {
 
 #main-navigation {
     @include flex(row-reverse, flex-end, center);
-    padding-right: 3rem;
     gap: 2.5rem;
     ul {
         @include flex(center, center);
