@@ -619,6 +619,7 @@ main {
         @include flex(row,center,space-between );
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        margin: 2rem 0rem 2rem 0rem;
         a {
             text-decoration: none;
             h3 {
@@ -664,7 +665,7 @@ main {
 // ######### FOOTER #########
 #bottom-footer {
     grid-area: bottom-footer;
-    @include flex(row,center,center)
+    @include flex(row,center,center);
 }
 
 #om-oss {
@@ -675,9 +676,20 @@ main {
     grid-area: kundeservice;
     @include flex(column);
 }
+#kunde-list {
+    @include flex(column,center, center);
+    li {
+        a {
+            background-color: none;
+        }   
+    }
+}
 #vil-og-bet {
     grid-area: vil-og-bet;
     @include flex(column);
+}
+#vilk-list {
+    @include flex(column,center, center);
 }
 #sosiale {
     grid-area: sosiale;
@@ -685,6 +697,7 @@ main {
 }
 #footer-info {
     grid-area: footer-info;
+    margin-bottom: 3rem
 }
 
 .payment-icon {
@@ -703,7 +716,7 @@ footer {
     ul {
         @include flex(center, center);
         gap: 1rem;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         li {
             list-style: none;
         }
@@ -724,12 +737,24 @@ footer {
         gap: 1.5rem;
         border-top: 1px solid rgb(207, 151, 151);
         padding-top: 1.5rem;
+        p {
+            line-height: 1.15rem;
+        }
+        ul {
+            li {
+                border: none;
+                a {
+                    @include font-set($font-titles, 1.2rem, $align: center);
+                    padding: 0;
+                }
+            }
+        }
         a {
-            @include font-set($font-titles, 1.2rem, $align: center);
+            @include font-set($font-titles, 1.5rem, 700, $align: center);
             display: inline-block;
             padding: 0.5rem 1rem;
             border-radius: 15%;
-            background-color: #dddddd;
+            // background-color: #dddddd;
             text-decoration: none;
             color: black;
             &:hover {
@@ -745,6 +770,7 @@ footer {
     @include flex(column, center, center);
     
     p {
+        margin-top: 1.05rem;
         @include font-set($font-titles, 1.2rem, 400);
     }
 
@@ -933,7 +959,7 @@ main {
 }
 
 #kategory_side_buttons {
-    gap: 43rem;
+    gap: 46rem;
 }
 
 #product_pictures_grid {

@@ -750,6 +750,7 @@ main {
   justify-content: space-between;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  margin: 2rem 0rem 2rem 0rem;
 }
 #product_info #reviews a {
   text-decoration: none;
@@ -824,12 +825,29 @@ main {
   justify-content: initial;
 }
 
+#kunde-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#kunde-list li a {
+  background-color: none;
+}
+
 #vil-og-bet {
   grid-area: vil-og-bet;
   display: flex;
   flex-direction: column;
   align-items: initial;
   justify-content: initial;
+}
+
+#vilk-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #sosiale {
@@ -842,6 +860,7 @@ main {
 
 #footer-info {
   grid-area: footer-info;
+  margin-bottom: 3rem;
 }
 
 .payment-icon {
@@ -863,7 +882,7 @@ footer ul {
   align-items: center;
   justify-content: initial;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 footer ul li {
   list-style: none;
@@ -884,16 +903,29 @@ footer ul li {
   border-top: 1px solid rgb(207, 151, 151);
   padding-top: 1.5rem;
 }
-#footer-grid li a {
+#footer-grid li p {
+  line-height: 1.15rem;
+}
+#footer-grid li ul li {
+  border: none;
+}
+#footer-grid li ul li a {
   font-family: "Gabarito", cursive;
   font-size: 1.2rem;
   font-weight: normal;
   font-style: normal;
   text-align: center;
+  padding: 0;
+}
+#footer-grid li a {
+  font-family: "Gabarito", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 15%;
-  background-color: #dddddd;
   text-decoration: none;
   color: black;
 }
@@ -910,6 +942,7 @@ footer ul li {
   justify-content: center;
 }
 #sosiale p {
+  margin-top: 1.05rem;
   font-family: "Gabarito", cursive;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1101,7 +1134,7 @@ footer ul li {
     font-size: 1.1rem;
   }
   #kategory_side_buttons {
-    gap: 43rem;
+    gap: 46rem;
   }
   #product_pictures_grid {
     grid-template-columns: repeat(3, 1fr);
