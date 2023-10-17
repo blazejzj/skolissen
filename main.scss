@@ -422,7 +422,11 @@ main {
             a {
                 text-decoration: none;
                 color: white;
-                @include font-set($font-main-undercategories,1rem,600,)
+                @include font-set($font-main-undercategories,1rem,600,);
+                &:hover {
+                    font-size: 1.05rem;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -759,8 +763,8 @@ footer {
             color: black;
             &:hover {
                 color: black;
-                background-color: #d6d6d6;
-                text-decoration: underline
+                background-color: #e4e4e4;
+                text-decoration: underline;
             }
         }
     }
@@ -788,6 +792,10 @@ footer {
 
 #copyright {
     @include flex(column, center, center);
+}
+
+#bottom_logo {
+    display: none;
 }
 
 // ######### MEDIA QUERY FOR DESKTOP #########
@@ -953,6 +961,9 @@ main {
         li {
             a {
                 font-size: 1.1rem;
+                &:hover {
+                    font-size: 1.15rem;
+                }
             }
         }
     }
@@ -1098,7 +1109,8 @@ main {
 
 #footer-grid {
     grid-template-areas:
-    'om-oss kundeservice vil-og-bet sosiale';
+    'om-oss kundeservice vil-og-bet'
+    'sosiale sosiale sosiale';
     align-items: start;
     padding: 4rem 7rem 0 7rem;
     li {
@@ -1124,5 +1136,10 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+}
+#bottom_logo {
+    display: initial;
+    margin-top: 5rem;
+    @include font-set($font-logo, 4rem, 700);
 }
 }

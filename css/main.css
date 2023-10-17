@@ -502,6 +502,10 @@ main {
   font-style: normal;
   text-align: left;
 }
+#menu_kategory_side ul li a:hover {
+  font-size: 1.05rem;
+  text-decoration: underline;
+}
 
 #kategory_side_buttons {
   grid-area: kategory_side_buttons;
@@ -931,7 +935,7 @@ footer ul li {
 }
 #footer-grid li a:hover {
   color: black;
-  background-color: #d6d6d6;
+  background-color: #e4e4e4;
   text-decoration: underline;
 }
 
@@ -967,6 +971,10 @@ footer ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#bottom_logo {
+  display: none;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1133,6 +1141,9 @@ footer ul li {
   #menu_kategory_side ul li a {
     font-size: 1.1rem;
   }
+  #menu_kategory_side ul li a:hover {
+    font-size: 1.15rem;
+  }
   #kategory_side_buttons {
     gap: 46rem;
   }
@@ -1267,7 +1278,7 @@ footer ul li {
     padding-bottom: 2rem;
   }
   #footer-grid {
-    grid-template-areas: "om-oss kundeservice vil-og-bet sosiale";
+    grid-template-areas: "om-oss kundeservice vil-og-bet" "sosiale sosiale sosiale";
     align-items: start;
     padding: 4rem 7rem 0 7rem;
   }
@@ -1291,5 +1302,14 @@ footer ul li {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+  }
+  #bottom_logo {
+    display: initial;
+    margin-top: 5rem;
+    font-family: "Lilita One", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */
