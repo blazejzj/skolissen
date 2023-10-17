@@ -15,74 +15,6 @@
   padding-top: 7rem;
 }
 
-#background_login {
-  position: relative;
-  padding-top: 7rem;
-}
-#background_login::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(../img/skolissen.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  z-index: -1;
-}
-#background_login #login-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid #4e4e4e;
-  border-radius: 10%;
-}
-#background_login #login-form h3 {
-  font-family: "Gabarito", cursive;
-  font-size: 1.4rem;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-  margin-bottom: 1.1rem;
-  text-decoration: underline;
-  text-decoration-color: rgb(148, 88, 88);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 10px;
-}
-#background_login #login-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: rgb(8, 8, 8);
-  font-family: "Mukta Vaani", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-#background_login #login-form input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  outline: 1px solid grey;
-  margin-bottom: 1.1rem;
-}
-#background_login #login-form button {
-  padding: 0.5rem 0.5rem;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(148, 88, 88);
-  color: white;
-  cursor: pointer;
-}
-#background_login #login-form button:hover {
-  background: 5f5f;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -159,6 +91,7 @@ body {
   grid-template-areas: "site-logo main-navigation";
   border-bottom: transparent;
   box-shadow: 0px 5px 15px rgb(202, 201, 201);
+  z-index: 10;
 }
 
 #site-logo {
@@ -805,6 +738,74 @@ main {
   font-weight: 700;
   font-style: normal;
   text-align: left;
+}
+
+#background_login {
+  position: relative;
+  padding-top: 7rem;
+}
+#background_login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/skolissen.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+#background_login #login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #4e4e4e;
+  border-radius: 10%;
+}
+#background_login #login-form h3 {
+  font-family: "Gabarito", cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(148, 88, 88);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+#background_login #login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgb(8, 8, 8);
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+#background_login #login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  outline: 1px solid grey;
+  margin-bottom: 1.1rem;
+}
+#background_login #login-form button {
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(148, 88, 88);
+  color: white;
+  cursor: pointer;
+}
+#background_login #login-form button:hover {
+  background: 5f5f;
 }
 
 #bottom-footer {
