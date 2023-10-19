@@ -18,6 +18,7 @@
     position: relative;
     padding-top: 7rem;
 
+    // Fikk litt hjelp med å sette gjennomsiktig bakgrunn med formen på toppen av GPT (logg in siden)
     &::before {
         content: '';
         position: absolute;
@@ -318,7 +319,9 @@ main {
 
 #payment-show {
     grid-area: payment;
-    @include flex(row, center , center)
+    @include flex(row, center , center);
+    border-top: 1px solid rgb(207, 151, 151);
+    padding-top: 2rem;
 }
 
 #copyright {
@@ -448,6 +451,7 @@ main {
     #filtrer_button {
         background-color: rgb(110, 108, 108);
         margin-right: 2.7rem;
+        color: #fcfcfc;
     }
     a {
         text-decoration: none;
@@ -701,7 +705,6 @@ main {
 }
 #footer-info {
     grid-area: footer-info;
-    margin-bottom: 3rem
 }
 
 .payment-icon {
@@ -772,20 +775,22 @@ footer {
 
 #sosiale {
     @include flex(column, center, center);
-    
     p {
-        margin-top: 1.05rem;
-        @include font-set($font-titles, 1.2rem, 400);
+        @include font-set($font-main-undercategories, 1rem, 300);
     }
-
     #social-icons {
         @include flex(center,center);
         gap: 10px;
-
+        margin: 0 0 4rem 0;
         a {
             color: white;
             border-radius: 50%;
             background-color: rgb(207, 151, 151);
+            padding: 1rem;
+            margin-top: 1rem;
+            @include font-set($font-titles, 1rem, 400, $align: center);
+            width: 3rem;
+            text-decoration: none
         }
     }
 }
@@ -1141,5 +1146,27 @@ footer {
     display: initial;
     margin-top: 5rem;
     @include font-set($font-logo, 4rem, 700);
+}
+
+
+#sosiale {
+    @include flex(row, center center);
+    gap: 2rem;
+    #social-icons {
+        @include flex(center,center);
+        gap: 1.2rem;
+        margin-top: 3rem;
+        a {
+            width: 2rem;
+            height: 2rem;
+            @include flex(center,center);
+            padding-right: 1.35rem;
+        }
+    }
+}
+
+#payment-show {
+    border:none;
+    padding-top: 0;
 }
 }

@@ -371,6 +371,8 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid rgb(207, 151, 151);
+  padding-top: 2rem;
 }
 
 #copyright {
@@ -535,6 +537,7 @@ main {
 #kategory_side_buttons #filtrer_button {
   background-color: rgb(110, 108, 108);
   margin-right: 2.7rem;
+  color: #fcfcfc;
 }
 #kategory_side_buttons a {
   text-decoration: none;
@@ -864,7 +867,6 @@ main {
 
 #footer-info {
   grid-area: footer-info;
-  margin-bottom: 3rem;
 }
 
 .payment-icon {
@@ -946,10 +948,9 @@ footer ul li {
   justify-content: center;
 }
 #sosiale p {
-  margin-top: 1.05rem;
-  font-family: "Gabarito", cursive;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
   font-style: normal;
   text-align: left;
 }
@@ -959,11 +960,21 @@ footer ul li {
   align-items: center;
   justify-content: initial;
   gap: 10px;
+  margin: 0 0 4rem 0;
 }
 #sosiale #social-icons a {
   color: white;
   border-radius: 50%;
   background-color: rgb(207, 151, 151);
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: "Gabarito", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  width: 3rem;
+  text-decoration: none;
 }
 
 #copyright {
@@ -1311,5 +1322,33 @@ footer ul li {
     font-weight: 700;
     font-style: normal;
     text-align: left;
+  }
+  #sosiale {
+    display: flex;
+    flex-direction: row;
+    align-items: center center;
+    justify-content: initial;
+    gap: 2rem;
+  }
+  #sosiale #social-icons {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: initial;
+    gap: 1.2rem;
+    margin-top: 3rem;
+  }
+  #sosiale #social-icons a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: initial;
+    padding-right: 1.35rem;
+  }
+  #payment-show {
+    border: none;
+    padding-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */
